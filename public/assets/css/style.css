@@ -3,20 +3,11 @@ html {
 	position: relative;
   	min-height: 100%;
 }
+
 body {
   	/* Margin bottom by footer height */
   	margin-bottom: 100px;
   	/*background: url("../img/popsicle.png") no-repeat center center fixed;*/
-}
-img.bg {
-  /* Set up proportionate scaling */
-  width: 50%;
-  height: auto;
-  /* Set up positioning */
-  position: absolute;
-  top: -10px;
-  right: 0;
-  
 }
 
 .footer {
@@ -37,6 +28,18 @@ img.bg {
 	color: white;
 }
 
+/* BACKGROUND IMAGE */
+img.bg {
+  /* Set up proportionate scaling */
+  width: 550px;
+  height: auto;
+  /* Set up positioning */
+  position: absolute;
+  top: -10px;
+  right: 0;
+  z-index: -1;
+}
+
 /* OTHER PAGE STYLES */
 #homeHeader {
 	margin-top: 70px;
@@ -53,4 +56,12 @@ img.bg {
 
 .form-group {
 	margin-top: 40px;
+}
+
+.instructions {
+	margin-top: 20px;
+}
+
+.devour {
+	display: inline-block;
 }

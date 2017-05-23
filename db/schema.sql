@@ -5,7 +5,7 @@ CREATE TABLE popsicles
 (
 	id INT NOT NULL AUTO_INCREMENT,
 	pop_name VARCHAR(255) NOT NULL,
-	devoured BIT NOT NULL DEFAULT 0,
+	devoured BIT DEFAULT 0,
 	pop_date TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
 );
