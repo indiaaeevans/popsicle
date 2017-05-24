@@ -60,8 +60,10 @@ img.bg {
 
 .instructions {
 	margin-top: 20px;
+	color: #f88379;
 }
 
 .devour {
-	display: inline-block;
+/*	display: inline-block;
+*/	color: gray;
 }
