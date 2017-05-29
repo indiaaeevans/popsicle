@@ -5,7 +5,7 @@
 		<span class="label label-primary">Freezer</span>
 			
 		{{#each popsicles}}
-			{{#unless this.devoured === '1'}}
+			{{#unless this.devoured}}
 				<li class="list-group-item">				     	
 				    <form action="/{{this.id}}?_method=PUT" method="POST">
           				<input type="hidden" name='devoured' value=1>
@@ -21,7 +21,7 @@
 		<span class="label label-default">Devoured</span>
 			
 		{{#each popsicles}}
-			{{#if this.devoured === '1'}}
+			{{#if this.devoured}}
 				<li class="list-group-item"><button class="devour btn btn-default btn-sm disabled" type="submit">{{this.pop_name}}</button></li>
 			{{/if}}
 		{{/each}}
